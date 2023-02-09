@@ -1,0 +1,14 @@
+<div>
+    <div class="my-3">
+        {{ channelName$ | async}}
+    </div>
+    <div class="d-flex justify-content-start">
+        <input type="text" placeholder="enter value" [(ngModel)]="value" class="me-3 form-control w-auto"/>
+        <button class="btn btn-primary" (click)="onAdd()">Add to counter</button>
+    </div>
+
+</div>
+
+<div class="mt-4">
+    <button class="btn btn-danger" (click)="onChangeChannelName()">Change Channel</button>
+</div>
